@@ -117,6 +117,12 @@ public class OrderService {
         }
     }
 
+    public List<Order> getAllOrdersInternal() {
+
+        return orderRepository.findAll();
+
+    }
+
 
 
 
