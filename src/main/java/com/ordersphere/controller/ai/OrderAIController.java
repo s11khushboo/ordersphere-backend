@@ -25,7 +25,7 @@ public class OrderAIController {
     @PostMapping("/summary")
     public String summarizeOrders(@Valid @RequestBody AIQueryRequest request) {
 
-        List<Order> orders = orderService.getAllOrdersInternal();
-        return orderAIService.generateSummary(orders, request.question());
+//        List<Order> orders = orderService.getAllOrdersInternal();
+        return orderAIService.generateSummary(request.question());
     }
 }
